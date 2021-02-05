@@ -7,7 +7,8 @@ window.addEventListener('camera-error', (error) => {
 })
 
 window.addEventListener('model-loaded', (e)=>{
-    console.log("Modelo listo XD");
+    
+
     document.getElementById("splassScreen").style.display="none";
     console.log(e.detail.model)
     let azuldelgado = e.detail.model.getObjectByName('AzulDelgado001')
@@ -20,7 +21,6 @@ window.addEventListener('model-loaded', (e)=>{
     BlancoGrueso001.material.opacity=0.5
     BlancoTop001.material.opacity=0.5
     TelaTempur001.material.opacity=0.5
-    // e.detail.model.getObjectByName('AzulDelgado');
     
 });
 
