@@ -15,11 +15,11 @@ window.addEventListener('model-loaded', (e)=>{
     let BlancoGrueso001 = e.detail.model.getObjectByName('BlancoGrueso001')
     let BlancoTop001 = e.detail.model.getObjectByName('BlancoTop001')
     let TelaTempur001 = e.detail.model.getObjectByName('TelaTempur001')
-    AzulGrueso001.material.opacity=0.1
-    azuldelgado.material.opacity=0.1
-    BlancoGrueso001.material.opacity=0.1
-    BlancoTop001.material.opacity=0.1
-    TelaTempur001.material.opacity=0.1
+    AzulGrueso001.material.opacity=0.5
+    azuldelgado.material.opacity=0.5
+    BlancoGrueso001.material.opacity=0.5
+    BlancoTop001.material.opacity=0.5
+    TelaTempur001.material.opacity=0.5
     // e.detail.model.getObjectByName('AzulDelgado');
     
 });
