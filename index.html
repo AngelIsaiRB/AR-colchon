@@ -10,12 +10,10 @@
     demo Colchones
 </title>
 <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-<!-- include aframe-ar.js -->
 <script src="js/aframe-ar.js"></script>
 <link rel="stylesheet" href="style/index.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.1/progressbar.min.js" integrity="sha512-7IoDEsIJGxz/gNyJY/0LRtS45wDSvPFXGPuC7Fo4YueWMNOmWKMAllEqo2Im3pgOjeEwsOoieyliRgdkZnY0ow==" crossorigin="anonymous"></script>
-<!-- Register an aframe component that allows reacting to marker events -->
-
+<script src="js/main.js"></script>
 
 <body >
     <div id="splassScreen">
@@ -34,31 +32,27 @@
 			<img src="assets/images/Splashscreen_fondo.png" alt="imagen de fondo">
 		</div>
     </div>
-    
-   
         <a-entity camera >
             <a-scene embedded 
-            vr-mode-ui="enabled: false"
-            arjs='sourceType: webcam;  debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' 
-            renderer='precision: medium;'>
-                
+                vr-mode-ui="enabled: false"
+                arjs='sourceType: webcam;  debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' 
+                renderer='precision: medium;'>            
                 <a-marker type='barcode' value='0' id='marker-barcode-5' registerevents
-                smooth="true"
-                smoothCount="30"
-                smoothTolerance="0.01"
-                smoothThreshold="20">
-                <a-entity registerevents
-                id="model"
-                gltf-model="assets/models/colchon-2/Demo_Colchones2.glb"
-                scale="1 1 1"
-                position="0 0 0"
-                rotation="5 0 0"> 
+                    smooth="true"
+                    smoothCount="30"
+                    smoothTolerance="0.01"
+                    smoothThreshold="20">
+                <a-entity 
+                    id="model"
+                    gltf-model="assets/models/colchon-2/Demo_Colchones2.glb"
+                    scale="1 1.5 1"
+                    position="0 0 0"
+                    rotation="5 0 0"></a-entity> 
                 </a-marker>	
             </a-scene>
         </a-entity>
-    
-</body>
-<script src="js/main.js"></script>
+    </body>
+<script src="js/progresBar.js"></script>
 </html>
 
 
