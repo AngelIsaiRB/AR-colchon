@@ -5,7 +5,7 @@
 ---
 
 1. Este repositorio no necesita instalacion solo descarga/clona y ejecuta
-    + `recomendable Visual Studio Code` [obtener](https://code.visualstudio.com) 
+    + `Recomendable Visual Studio Code` [obtener](https://code.visualstudio.com) 
 
 2. Ejecutar.
     + `Se recomienda el plugin "Live server"` [obtener](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
@@ -18,7 +18,7 @@
 **Mas informacion?**
 ---
 
-lista de desarolladores que contribuyeron 
+lista de desarrolladores  que contribuyeron 
 
 1. Angel isai Ramirez Bazan
 + isai.ramirez@inmersys.com 
