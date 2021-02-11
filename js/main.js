@@ -7,8 +7,6 @@ window.addEventListener('camera-error', (error) => {
 })
 
 window.addEventListener('model-loaded', (e)=>{
-    
-
     document.getElementById("splassScreen").style.display="none";
     console.log(e.detail.model)
     let azuldelgado = e.detail.model.getObjectByName('AzulDelgado001')
